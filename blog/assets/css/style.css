@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    background: #F3F5F7;
+}
+
+.container{
+    width: min(70%, 700px);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+    padding: 30px 0;
+    background: linear-gradient(to left, #3ea1db, #574ae8);
+    margin-bottom: 64px;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.header h1 a{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header h2{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.form-header{
+    display: flex;
+}
+
+.form-header input{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    width: 100%;
+    color: #fff;
+}
+
+.form-header input::placeholder{
+    color: #fff;
+}
+.form-header input:last-child{
+    border-top-right-radius: 4px;
+}
+
+.form-header input:last-child{
+    border-bottom-right-radius: 4px;
+}
+
+.form-header button:first-child{
+    border-top-left-radius: 4px;
+}
+
+.form-header button:first-child{
+    border-bottom-left-radius: 4px;
+}
+
+.form-header button, .form-header input{
+    outline: none;
+    border: none;
+    padding: 1.2rem 12px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-header button{
+    cursor: pointer;
+}
+
+/* Responsive Header Mobile */
+
+@media screen and  (max-width: 768px){
+    .container{
+        width: min(100%, 350px)
+    }
+}
+/* NEW ITEM */
+
+.new-item{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.top-news{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.top-news button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.top-news span{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.6rem;
+    color: #717171;
+}
+
+.bottom-news h1{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #1A202C;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.bottom-news p{
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 0.01rem;
+    color: #717171;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
