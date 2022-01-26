@@ -15,12 +15,12 @@ function initContentCards(){
     
         const titleDOM = document.querySelectorAll('.title-news')
         const descriptionP = document.querySelectorAll('.descrip-paragraph')
-        const BASE_URL =  'https://newsapi.org/v2/top-headlines?country=br&apiKey=1c3bc6a544834622b4bcabe5149a37ee'
+        const BASE_URL =  'https://newsdata.io/api/1/news?apikey=pub_40068ff0ffcad47a254a4b34a49a0e948ab1&country=us'
     
         fetch(BASE_URL).then(data => data.json()).then(body => {
-            for(let i = 0; i < body.articles.length; i++){
-                titleDOM[i].textContent = body.articles[i].title
-                descriptionP[i].innerText = body.articles[i].description
+            for(let i = 0; i < body.results.length; i++){
+                titleDOM[i].textContent = body.results[i].title
+                descriptionP[i].innerText = body.results[i].description
             }
         })
     
